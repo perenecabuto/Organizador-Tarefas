@@ -1,0 +1,89 @@
+<html>
+<head>
+    <link href="share/reset.css" rel="stylesheet" type="text/css" />
+    <link href="share/layout.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="borda">
+<div class="quadro">
+    <ul class="linha-quadro cabecalho-quadro">
+        <li>Tarefas</li>
+        <li class="quantidade">Vezes</li>
+        <li class="dia-semana">Dom</li>
+        <li class="dia-semana">Seg</li>
+        <li class="dia-semana">Ter</li>
+        <li class="dia-semana">Qua</li>
+        <li class="dia-semana">Qui</li>
+        <li class="dia-semana">Sex</li>
+        <li class="dia-semana">Sab</li>
+    </ul>
+
+    <form method="post" action="">
+        <ul class="linha-quadro">
+            <li>
+                <input type="text" name="nome_tarefa" />
+            </li>
+            <li class="quantidade">
+                <input type="text" class="quantidade" name="quantidade_por_semana" />
+            </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="1" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="2" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="3" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="4" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="5" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="6" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="7" /> </li>
+            <li> <input type="submit" value="adicionar" />
+        </ul>
+    </form>
+
+    <form method="post" action="">
+        <input type="hidden" name="id" value="1" />
+
+        <ul class="linha-quadro">
+            <li>
+                <input type="text" name="nome_tarefa" value="Java" />
+            </li>
+            <li class="quantidade">
+                <input type="text" class="quantidade" name="quantidade_por_semana" value="3" />
+            </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="1" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="2" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="3" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="4" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="5" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="6" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="7" /> </li>
+            <li> <input type="submit" value="salvar" />
+        </ul>
+    </form>
+
+    <form method="post" action="">
+        <input type="hidden" name="id" value="1" />
+
+        <ul class="linha-quadro">
+            <li>
+                <input type="text" name="nome_tarefa" value="Java" />
+            </li>
+            <li class="quantidade">
+                <input type="text" class="quantidade" name="quantidade_por_semana" value="3" />
+            </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="1" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="2" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="3" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="4" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="5" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="6" /> </li>
+            <li class="dia-semana"> <input type="checkbox" name="dia-semana" value="7" /> </li>
+            <li> <input type="submit" value="salvar" />
+        </ul>
+    </form>
+</div>
+
+<span class="rodape">Organizador de tarefas</span>
+
+</div>
+</body>
+
+</html>

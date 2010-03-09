@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <title>Src C0 Coverage Information - RCov</title>
+    <link href="screen.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="print.css" media="print" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="rcov.js"></script>
+  </head>
+  <body>
+    <h1>Src C0 Coverage Information - RCov</h1>
+    
+
+    <noscript><style type="text/css">.if_js { display:none; }</style></noscript>
+
+    <div class="filters if_js">
+      <fieldset>
+        <label>File Filter:</label>
+        <select id="file_filter" class="filter">
+          <option value="all_files">Show All</option>
+          <option value="">/</option><option value=".gem">.gem/</option><option value="1.8">1.8/</option><option value="bacamarte">bacamarte/</option><option value="control">control/</option><option value="diff">diff/</option><option value="diff-lcs-1.1.2">diff-lcs-1.1.2/</option><option value="examples">examples/</option><option value="gems">gems/</option><option value="home">home/</option><option value="lcs">lcs/</option><option value="lib">lib/</option><option value="rack">rack/</option><option value="rack-1.1.0">rack-1.1.0/</option><option value="rack-test-0.5.3">rack-test-0.5.3/</option><option value="rcov">rcov/</option><option value="rcov-0.9.8">rcov-0.9.8/</option><option value="ruby">ruby/</option><option value="sinatra">sinatra/</option><option value="sinatra-0.9.5">sinatra-0.9.5/</option><option value="var">var/</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>Code Coverage Threshold:</label>
+        <select id="coverage_filter" class="filter">
+          <option value="all_coverage">Show All</option>
+          <option value="10">&lt; 10% Coverage</option><option value="20">&lt; 20% Coverage</option><option value="30">&lt; 30% Coverage</option><option value="40">&lt; 40% Coverage</option><option value="50">&lt; 50% Coverage</option><option value="60">&lt; 60% Coverage</option><option value="70">&lt; 70% Coverage</option><option value="80">&lt; 80% Coverage</option><option value="90">&lt; 90% Coverage</option><option value="100">&lt; 100% Coverage</option>
+          <option value="110">= 100% Coverage</option>
+        </select>
+      </fieldset>
+    </div>
+    
+    <div class="report_table_wrapper">
+      <table class='report' id='report_table'>
+        <thead>
+          <tr>
+            <th class="left_align">Name</th>
+            <th class="right_align">Total Lines</th>
+            <th class="right_align">Lines of Code</th>
+            <th class="left_align">Total Coverage</th>
+            <th class="left_align">Code Coverage</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td class="left_align">TOTAL</td>
+            <td class='right_align'><tt>5725</tt></td>
+            <td class='right_align'><tt>3706</tt></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class=''>50.85%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:51px"></div>
+            <div class="uncovered" style="width:49px"></div>
+          </div></td>
+            <td class="left_align"><div class="percent_graph_legend"><tt class='coverage_total'>35.35%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:35px"></div>
+            <div class="uncovered" style="width:65px"></div>
+          </div></td>
+          </tr>
+        </tfoot>
+        <tbody>
+          
+            <tr class="all_files all_coverage 100  home bacamarte .gem ruby 1.8 gems rack-1.1.0 lib even">
+              <td class="left_align"><a href="-home-bacamarte-_gem-ruby-1_8-gems-rack-1_1_0-lib-rack_rb.html">/home/bacamarte/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack.rb</a></td>
+              <td class='right_align'><tt>92</tt></td>
+              <td class='right_align'><tt>63</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>95.65%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:96px"></div>
+            <div class="uncovered" style="width:4px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>93.65%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:94px"></div>
+            <div class="uncovered" style="width:6px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 30 40 50 60 70 80 90 100  home bacamarte .gem ruby 1.8 gems rack-1.1.0 lib rack odd">
+              <td class="left_align"><a href="-home-bacamarte-_gem-ruby-1_8-gems-rack-1_1_0-lib-rack-builder_rb.html">/home/bacamarte/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/builder.rb</a></td>
+              <td class='right_align'><tt>80</tt></td>
+              <td class='right_align'><tt>49</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>51.25%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:51px"></div>
+            <div class="uncovered" style="width:49px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>20.41%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:20px"></div>
+            <div class="uncovered" style="width:80px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 40 50 60 70 80 90 100  home bacamarte .gem ruby 1.8 gems rack-1.1.0 lib rack even">
+              <td class="left_align"><a href="-home-bacamarte-_gem-ruby-1_8-gems-rack-1_1_0-lib-rack-request_rb.html">/home/bacamarte/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/request.rb</a></td>
+              <td class='right_align'><tt>271</tt></td>
+              <td class='right_align'><tt>170</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>53.14%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:53px"></div>
+            <div class="uncovered" style="width:47px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>34.12%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:34px"></div>
+            <div class="uncovered" style="width:66px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 40 50 60 70 80 90 100  home bacamarte .gem ruby 1.8 gems rack-1.1.0 lib rack odd">
+              <td class="left_align"><a href="-home-bacamarte-_gem-ruby-1_8-gems-rack-1_1_0-lib-rack-response_rb.html">/home/bacamarte/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/response.rb</a></td>
+              <td class='right_align'><tt>149</tt></td>
+              <td class='right_align'><tt>101</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>55.03%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:55px"></div>
+            <div class="uncovered" style="width:45px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>39.60%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:40px"></div>
+            <div class="uncovered" style="width:60px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 90 100  home bacamarte .gem ruby 1.8 gems rack-1.1.0 lib rack even">
+              <td class="left_align"><a href="-home-bacamarte-_gem-ruby-1_8-gems-rack-1_1_0-lib-rack-showexceptions_rb.html">/home/bacamarte/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/showexceptions.rb</a></td>
+              <td class='right_align'><tt>349</tt></td>
+              <td class='right_align'><tt>294</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>85.39%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:85px"></div>
+            <div class="uncovered" style="width:15px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>84.35%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:84px"></div>
+            <div class="uncovered" style="width:16px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 30 40 50 60 70 80 90 100  home bacamarte .gem ruby 1.8 gems rack-1.1.0 lib rack odd">
+              <td class="left_align"><a href="-home-bacamarte-_gem-ruby-1_8-gems-rack-1_1_0-lib-rack-utils_rb.html">/home/bacamarte/.gem/ruby/1.8/gems/rack-1.1.0/lib/rack/utils.rb</a></td>
+              <td class='right_align'><tt>620</tt></td>
+              <td class='right_align'><tt>483</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>32.42%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:32px"></div>
+            <div class="uncovered" style="width:68px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>25.47%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:25px"></div>
+            <div class="uncovered" style="width:75px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 30 40 50 60 70 80 90 100  home bacamarte .gem ruby 1.8 gems rack-test-0.5.3 lib rack even">
+              <td class="left_align"><a href="-home-bacamarte-_gem-ruby-1_8-gems-rack-test-0_5_3-lib-rack-mock_session_rb.html">/home/bacamarte/.gem/ruby/1.8/gems/rack-test-0.5.3/lib/rack/mock_session.rb</a></td>
+              <td class='right_align'><tt>61</tt></td>
+              <td class='right_align'><tt>43</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>40.98%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:41px"></div>
+            <div class="uncovered" style="width:59px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>27.91%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:28px"></div>
+            <div class="uncovered" style="width:72px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 30 40 50 60 70 80 90 100  home bacamarte .gem ruby 1.8 gems rack-test-0.5.3 lib rack odd">
+              <td class="left_align"><a href="-home-bacamarte-_gem-ruby-1_8-gems-rack-test-0_5_3-lib-rack-test_rb.html">/home/bacamarte/.gem/ruby/1.8/gems/rack-test-0.5.3/lib/rack/test.rb</a></td>
+              <td class='right_align'><tt>276</tt></td>
+              <td class='right_align'><tt>165</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>46.01%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:46px"></div>
+            <div class="uncovered" style="width:54px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>23.64%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:24px"></div>
+            <div class="uncovered" style="width:76px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 10 20 30 40 50 60 70 80 90 100  home bacamarte .gem ruby 1.8 gems rcov-0.9.8 lib rcov even">
+              <td class="left_align"><a href="-home-bacamarte-_gem-ruby-1_8-gems-rcov-0_9_8-lib-rcov-code_coverage_analyzer_rb.html">/home/bacamarte/.gem/ruby/1.8/gems/rcov-0.9.8/lib/rcov/code_coverage_analyzer.rb</a></td>
+              <td class='right_align'><tt>271</tt></td>
+              <td class='right_align'><tt>156</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>7.01%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:7px"></div>
+            <div class="uncovered" style="width:93px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>5.13%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:5px"></div>
+            <div class="uncovered" style="width:95px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 10 20 30 40 50 60 70 80 90 100  home bacamarte .gem ruby 1.8 gems rcov-0.9.8 lib rcov odd">
+              <td class="left_align"><a href="-home-bacamarte-_gem-ruby-1_8-gems-rcov-0_9_8-lib-rcov-differential_analyzer_rb.html">/home/bacamarte/.gem/ruby/1.8/gems/rcov-0.9.8/lib/rcov/differential_analyzer.rb</a></td>
+              <td class='right_align'><tt>116</tt></td>
+              <td class='right_align'><tt>82</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>10.34%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:10px"></div>
+            <div class="uncovered" style="width:90px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>9.76%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:10px"></div>
+            <div class="uncovered" style="width:90px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 10 20 30 40 50 60 70 80 90 100  var lib gems 1.8 gems diff-lcs-1.1.2 lib diff even">
+              <td class="left_align"><a href="-var-lib-gems-1_8-gems-diff-lcs-1_1_2-lib-diff-lcs_rb.html">/var/lib/gems/1.8/gems/diff-lcs-1.1.2/lib/diff/lcs.rb</a></td>
+              <td class='right_align'><tt>1105</tt></td>
+              <td class='right_align'><tt>553</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>46.33%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:46px"></div>
+            <div class="uncovered" style="width:54px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>6.51%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:7px"></div>
+            <div class="uncovered" style="width:93px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 20 30 40 50 60 70 80 90 100  var lib gems 1.8 gems diff-lcs-1.1.2 lib diff lcs odd">
+              <td class="left_align"><a href="-var-lib-gems-1_8-gems-diff-lcs-1_1_2-lib-diff-lcs-block_rb.html">/var/lib/gems/1.8/gems/diff-lcs-1.1.2/lib/diff/lcs/block.rb</a></td>
+              <td class='right_align'><tt>51</tt></td>
+              <td class='right_align'><tt>28</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>52.94%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:53px"></div>
+            <div class="uncovered" style="width:47px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>17.86%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:18px"></div>
+            <div class="uncovered" style="width:82px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 50 60 70 80 90 100  var lib gems 1.8 gems diff-lcs-1.1.2 lib diff lcs even">
+              <td class="left_align"><a href="-var-lib-gems-1_8-gems-diff-lcs-1_1_2-lib-diff-lcs-callbacks_rb.html">/var/lib/gems/1.8/gems/diff-lcs-1.1.2/lib/diff/lcs/callbacks.rb</a></td>
+              <td class='right_align'><tt>322</tt></td>
+              <td class='right_align'><tt>83</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>84.47%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:84px"></div>
+            <div class="uncovered" style="width:16px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>40.96%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:41px"></div>
+            <div class="uncovered" style="width:59px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 40 50 60 70 80 90 100  var lib gems 1.8 gems diff-lcs-1.1.2 lib diff lcs odd">
+              <td class="left_align"><a href="-var-lib-gems-1_8-gems-diff-lcs-1_1_2-lib-diff-lcs-change_rb.html">/var/lib/gems/1.8/gems/diff-lcs-1.1.2/lib/diff/lcs/change.rb</a></td>
+              <td class='right_align'><tt>169</tt></td>
+              <td class='right_align'><tt>110</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>54.44%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:54px"></div>
+            <div class="uncovered" style="width:46px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>31.82%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:32px"></div>
+            <div class="uncovered" style="width:68px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 20 30 40 50 60 70 80 90 100  var lib gems 1.8 gems diff-lcs-1.1.2 lib diff lcs even">
+              <td class="left_align"><a href="-var-lib-gems-1_8-gems-diff-lcs-1_1_2-lib-diff-lcs-hunk_rb.html">/var/lib/gems/1.8/gems/diff-lcs-1.1.2/lib/diff/lcs/hunk.rb</a></td>
+              <td class='right_align'><tt>257</tt></td>
+              <td class='right_align'><tt>170</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>25.29%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:25px"></div>
+            <div class="uncovered" style="width:75px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>11.76%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:12px"></div>
+            <div class="uncovered" style="width:88px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 40 50 60 70 80 90 100  var lib gems 1.8 gems sinatra-0.9.5 lib sinatra odd">
+              <td class="left_align"><a href="-var-lib-gems-1_8-gems-sinatra-0_9_5-lib-sinatra-base_rb.html">/var/lib/gems/1.8/gems/sinatra-0.9.5/lib/sinatra/base.rb</a></td>
+              <td class='right_align'><tt>1172</tt></td>
+              <td class='right_align'><tt>862</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>47.78%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:48px"></div>
+            <div class="uncovered" style="width:52px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>34.57%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:35px"></div>
+            <div class="uncovered" style="width:65px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 100  var lib gems 1.8 gems sinatra-0.9.5 lib sinatra even">
+              <td class="left_align"><a href="-var-lib-gems-1_8-gems-sinatra-0_9_5-lib-sinatra-showexceptions_rb.html">/var/lib/gems/1.8/gems/sinatra-0.9.5/lib/sinatra/showexceptions.rb</a></td>
+              <td class='right_align'><tt>307</tt></td>
+              <td class='right_align'><tt>258</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>96.09%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:96px"></div>
+            <div class="uncovered" style="width:4px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>95.35%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:95px"></div>
+            <div class="uncovered" style="width:5px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 90 100 examples odd">
+              <td class="left_align"><a href="examples-organizador_tarefas_spec_rb.html">examples/organizador_tarefas_spec.rb</a></td>
+              <td class='right_align'><tt>45</tt></td>
+              <td class='right_align'><tt>28</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>86.67%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:87px"></div>
+            <div class="uncovered" style="width:13px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>82.14%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:82px"></div>
+            <div class="uncovered" style="width:18px"></div>
+          </div></td>
+            </tr>
+          
+            <tr class="all_files all_coverage 110 lib control even">
+              <td class="left_align"><a href="lib-control-organizador_tarefas_rb.html">lib/control/organizador_tarefas.rb</a></td>
+              <td class='right_align'><tt>12</tt></td>
+              <td class='right_align'><tt>8</tt></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+              <td class="left_align"><div class="percent_graph_legend"><tt class=''>100.00%</tt></div>
+          <div class="percent_graph">
+            <div class="covered" style="width:100px"></div>
+            <div class="uncovered" style="width:0px"></div>
+          </div></td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    
+    <p>Generated on Mon Mar 08 17:56:42 -0300 2010 with <a href="http://github.com/relevance/rcov">rcov 0.9.8</a></p>
+
+    <script type="text/javascript">
+      $(document).ready(function(){$("#report_table").tablesorter({widgets: ['zebra'], textExtraction: 'complex'});});
+      $('.filter').change(function(){
+        ff = $('#file_filter').val();
+        cf = $('#coverage_filter').val();
+        $('table#report_table tbody tr').each(function(i){ 
+          if ((this.className.split(" ").indexOf(ff) > -1) && (this.className.split(" ").indexOf(cf) > -1)) {
+            this.style.display = "";
+          } else {
+            this.style.display = "none";
+          };
+          restripe();
+        })
+      })
+    </script>
+
+  </body>
+</html>

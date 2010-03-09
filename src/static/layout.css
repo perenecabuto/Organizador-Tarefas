@@ -1,0 +1,107 @@
+body {
+    font-family: sans, Verdana, monospace;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.borda {
+    padding: 8px;
+    border-top: 2px dashed #53868B;
+    border-bottom: 2px dashed #53868B;
+    margin: auto auto;
+    width: 780px;
+    background-color: #ECF1EF;
+}
+
+.borda .flash {
+    font-weight: bold;
+    font-family: monospace;
+    padding-top: 5px;
+    padding-left: 5px;
+    float: left;
+}
+
+.quadro {
+    padding: 20px;
+    border: 0px solid #53868B;
+    background-color: #fff;
+    overflow-x: none;
+    -moz-border-radius: 5px;
+}
+
+.rodape {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+
+.cabecalho-quadro {
+    font-weight: bold;
+}
+
+.cabecalho-quadro li.dia-semana {
+}
+
+ul.linha-quadro {
+    height: 26px;
+    clear: left;
+}
+
+.linha-quadro li {
+    display: inline;
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-left: 2px;
+    margin-top: 2px;
+    padding: 5px;
+}
+
+.linha-quadro li.dia-semana {
+    text-align: center;
+    width: 40px;
+}
+
+li.quantidade {
+    width: 40px;
+    text-align: center;
+}
+
+.linha-quadro input {
+    border: none;
+    background-color: #eee;
+    margin: 0 0 0 0;
+    padding: 2 2 2 2;
+    width: 99%;
+}
+
+.linha-quadro .funcao {
+    text-align: center;
+}
+
+.linha-quadro .funcao input {
+    width: 45%;
+    text-align: center;
+}
+
+.linha-quadro input[type="text"] {
+    border: 1px solid #53868B;
+    padding: 2px;
+}
+
+.linha-quadro input.quantidade {
+    width: 30px;
+}
+
+.linha-quadro input[type="checkbox"] {
+    padding: 0;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>quadro_atual (Usuario)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File lib/model/usuario.rb, line 8</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">quadro_atual</span>
+        <span class="ruby-identifier">date</span> = <span class="ruby-constant">Date</span>.<span class="ruby-identifier">new</span>
+        <span class="ruby-identifier">puts</span> <span class="ruby-identifier">date</span>.<span class="ruby-identifier">methods</span>.<span class="ruby-identifier">grep</span>(<span class="ruby-value str">'today'</span>)
+        <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">quadro</span>.<span class="ruby-identifier">find</span>(
+            <span class="ruby-identifier">:first</span>,
+            <span class="ruby-identifier">:conditions</span> =<span class="ruby-operator">&gt;</span> {
+                <span class="ruby-identifier">:semana</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">date</span>.<span class="ruby-identifier">week</span>,
+                <span class="ruby-identifier">:mes</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">date</span>.<span class="ruby-identifier">month</span>,
+                <span class="ruby-identifier">:mes</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">date</span>.<span class="ruby-identifier">year</span>
+            }
+        )
+    <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>
