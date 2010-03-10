@@ -16,7 +16,7 @@ CouchFoo::Base.bulk_save_default = false
 CouchFoo::Base.logger = Logger.new(STDOUT)
 
 class OrganizadorDeTarefas
-    set :server, %w[thin webrick mongrel]
+    set :server, %w[webrick thin mongrel]
 
     use Rack::Session::Cookie,
         :key          => 'rack.session',
@@ -27,7 +27,7 @@ class OrganizadorDeTarefas
 
     use Rack::Flash
 
-    set :public, File.dirname(__FILE__) + '/../static'
+    set :public, File.dirname(__FILE__) + '/../public'
     set :views, File.dirname(__FILE__) + '/../views'
 
     #disable :logging, :dump_errors

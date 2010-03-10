@@ -1,45 +1,64 @@
 body {
     font-family: sans, Verdana, monospace;
     font-size: 12px;
-    padding: 10px;
 }
 
-.borda {
-    padding: 8px;
-    border-top: 2px dashed #53868B;
-    border-bottom: 2px dashed #53868B;
-    margin: auto auto;
-    width: 780px;
-    background-color: #ECF1EF;
+hr {
+    border: none;
+    border-bottom: 1px solid #53868B;
 }
 
-.borda .flash {
+.flash {
     font-weight: bold;
     font-family: monospace;
     padding-top: 5px;
     padding-left: 5px;
-    float: left;
+}
+
+.odd {
+    background-color: #F6F9ED;
+}
+
+.even {
+    background-color: #ECF1EF;
+}
+
+#logout {
+    padding: 2px;
+    padding-left: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    background-color: #ECF1EF;
+    border-left: 1px solid #53868B;
+    border-bottom: 1px solid #53868B;
+    right: 0;
+    top: 0;
+    position: fixed;
 }
 
 .quadro {
-    padding: 20px;
-    border: 0px solid #53868B;
+    width: 666px;
+    min-height: 400px;
+    padding: 10px;
+    margin: auto auto;
+    margin-top: 20px;
+    border: 10px solid #ccc;
+    overflow-x: hidden;
     background-color: #fff;
-    overflow-x: none;
-    -moz-border-radius: 5px;
-}
-
-.rodape {
-    display: block;
-    padding: 5px;
-    margin: 5px;
 }
 
 .cabecalho-quadro {
     font-weight: bold;
 }
 
-.cabecalho-quadro li.dia-semana {
+.cabecalho-quadro {
+    background-color: #5F9EA0;
+    color: #fff;
+}
+
+.cabecalho-quadro .dia-semana {
+    color: #ccc;
 }
 
 ul.linha-quadro {
@@ -69,22 +88,26 @@ li.quantidade {
 
 .linha-quadro input {
     border: none;
-    background-color: #eee;
     margin: 0 0 0 0;
     padding: 2 2 2 2;
     width: 99%;
 }
 
 .linha-quadro .funcao {
-    text-align: center;
+    text-align: left;
+    width: auto;
 }
 
 .linha-quadro .funcao input {
-    width: 45%;
-    text-align: center;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background-color: transparent;
+    margin-top: -9px;
 }
 
 .linha-quadro input[type="text"] {
+    -moz-border-radius: 10px;
     border: 1px solid #53868B;
     padding: 2px;
 }

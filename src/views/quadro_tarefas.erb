@@ -5,17 +5,21 @@
 <head>
     <meta http-equiv="content-type" content="text/xhtml; charset=utf-8" />
 
-    <link href="reset.css" rel="stylesheet" type="text/css" />
-    <link href="layout.css" rel="stylesheet" type="text/css" />
+    <link href="static/reset.css" rel="stylesheet" type="text/css" />
+    <link href="static/layout.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
-<div class="borda">
+<a id="logout" href="/logout">Sair <img src="static/imgs/delete_16.png" /></a>
 
-<span class="flash success"><%= flash[:sucess] %></span>
-<span class="flash error"><%= flash[:error] && flash[:error].each {|e| e + "<br />" } %></span>
+<strong>Usuario</strong>
+<span><%= usuario.nome %> (<i><%= usuario.email %></i>)</span>
+<hr />
 
 <div class="quadro">
+    <span class="flash success"><%= flash[:sucess] %></span>
+    <span class="flash error"><%= flash[:error] && flash[:error].each {|e| e + "<br />" } %></span>
+
     <ul class="linha-quadro cabecalho-quadro">
         <li>Tarefas</li>
         <li class="quantidade">Vezes</li>
@@ -43,13 +47,17 @@
             <li class="dia-semana"> <input type="checkbox" name="tarefa[sexta]"   /> </li>
             <li class="dia-semana"> <input type="checkbox" name="tarefa[sabado]"  /> </li>
             <li class="dia-semana"> <input type="checkbox" name="tarefa[domingo]" /> </li>
-            <li> <input type="submit" value="adicionar" /> </li>
+            <li class="funcao">
+                <input type="image" src="static/imgs/plus_32.png" />
+            </li>
         </ul>
     </form>
 
+    <% index = 0 %>
     <% tarefas.each do |tarefa| %>
     <form method="post" action="atualizar_tarefa/<%= tarefa.id %>">
-        <ul class="linha-quadro">
+        <% index += 1 %>
+        <ul class="linha-quadro <%= index.odd? ? 'odd' : 'even' %>">
             <li>
                 <input type="text" name="tarefa[nome]" value="<%= tarefa.nome %>" />
             </li>
@@ -64,17 +72,16 @@
             <li class="dia-semana"> <input type="checkbox" name="tarefa[sabado]"  <% if tarefa.sabado %>checked<% end %> /> </li>
             <li class="dia-semana"> <input type="checkbox" name="tarefa[domingo]" <% if tarefa.domingo %>checked<% end %> /> </li>
             <li class="funcao">
-                <input type="submit" name="atualizar" value="atualizar" />
-                <input type="submit" name="remover"   value="remover" onClick="return confirm('Tem certeza que deseja deletar?')" />
+                <input type="image" src="static/imgs/tick_32.png" name="atualizar" value="atualizar" />
+                <input type="image" src="static/imgs/trash_32.png" name="remover" value="remover"
+                    onClick="return confirm('Tem certeza que deseja deletar?')"
+                />
             </li>
         </ul>
     </form>
     <% end %>
 </div>
 
-<span class="rodape">Organizador de tarefas</span>
-
-</div>
 </body>
 
 </html>
