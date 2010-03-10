@@ -16,7 +16,13 @@ CouchFoo::Base.logger = Logger.new(STDOUT)
 describe "Dado que estou acessando o organizador de tarefas" do
 
     before(:all) do
-        @usuario = Usuario.new(:nome => 'TU', :email => "#{(rand * 10000).to_i}tu@odt.org", :senha => '123')
+        @usuario = Usuario.new(
+            :nome  => 'TU',
+            :login => "tu_#{(rand * 10000).to_i}",
+            :email => "#{(rand * 10000).to_i}tu@odt.org",
+            :senha => '123'
+        )
+
         @quadro  = @usuario.quadro_atual
 
         unless @usuario.save

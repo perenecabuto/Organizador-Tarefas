@@ -1,6 +1,6 @@
 class CouchFoo::Errors
   @@default_error_messages = {
-    :inclusion => "não está presente na lista %d",
+    :inclusion => "não está presente na lista",
     :exclusion => "está reservado",
     :invalid => "não é válido",
     :confirmation => "não foi confirmado",

@@ -12,7 +12,7 @@
 
 <div class="quadro">
     <span class="flash success"><%= flash[:sucess] %></span>
-    <span class="flash error"><%= flash[:error] && flash[:error].each {|e| e + "<br />" } %></span>
+    <span class="flash error"><%= flash[:error] && flash[:error].collect {|e| e + "<br />" } %></span>
 
     <form method="post" action="/login">
         <label for="login">Login</label><br />

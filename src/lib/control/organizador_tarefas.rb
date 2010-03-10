@@ -9,6 +9,7 @@ require 'model/tarefa'
 
 class OrganizadorDeTarefas < Sinatra::Base
 
+    # Pega o usuario autenticado
     def get_usuario_autenticado
         return session[:usuario]
     end
