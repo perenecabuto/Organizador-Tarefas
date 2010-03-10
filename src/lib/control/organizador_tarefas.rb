@@ -111,7 +111,9 @@ class OrganizadorDeTarefas < Sinatra::Base
         tarefa = self.get_quadro_atual.tarefas.find(id)
 
         if params[:atualizar]
+            tarefa.limpar_dias
             tarefa.update_attributes(params[:tarefa])
+
             if tarefa.save
                 flash[:sucess] = "Tarefa #{tarefa.nome} atualizada com sucesso"
             end

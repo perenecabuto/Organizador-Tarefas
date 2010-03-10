@@ -8,6 +8,15 @@ hr {
     border-bottom: 1px solid #53868B;
 }
 
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+
 .flash {
     font-weight: bold;
     font-family: monospace;
@@ -37,6 +46,8 @@ hr {
     position: fixed;
 }
 
+/* quadro */
+
 .quadro {
     width: 666px;
     min-height: 400px;
@@ -44,7 +55,6 @@ hr {
     margin: auto auto;
     margin-top: 20px;
     border: 10px solid #ccc;
-    overflow-x: hidden;
     background-color: #fff;
 }
 
@@ -55,10 +65,7 @@ hr {
 .cabecalho-quadro {
     background-color: #5F9EA0;
     color: #fff;
-}
-
-.cabecalho-quadro .dia-semana {
-    color: #ccc;
+    border: 1px solid #abb1c2;
 }
 
 ul.linha-quadro {
@@ -79,11 +86,6 @@ ul.linha-quadro {
 .linha-quadro li.dia-semana {
     text-align: center;
     width: 40px;
-}
-
-li.quantidade {
-    width: 40px;
-    text-align: center;
 }
 
 .linha-quadro input {
@@ -120,11 +122,9 @@ li.quantidade {
     padding: 0;
 }
 
-.success {
-    color: green;
+li.quantidade {
+    width: 40px;
+    text-align: center;
 }
 
-.error {
-    color: red;
-}
 

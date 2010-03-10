@@ -12,9 +12,10 @@
 
 <a id="logout" href="/logout">Sair <img src="static/imgs/delete_16.png" /></a>
 
-<strong>Usuario</strong>
-<span><%= usuario.nome %> (<i><%= usuario.email %></i>)</span>
-<hr />
+<div style="padding:5px; position:fixed; top: 0; right: 60px">
+    <strong>Usuario</strong>
+    <span><%= usuario.nome %> (<i><%= usuario.email %></i>)</span>
+</div>
 
 <div class="quadro">
     <span class="flash success"><%= flash[:sucess] %></span>
@@ -40,13 +41,13 @@
             <li class="quantidade">
                 <input type="text" class="quantidade" name="tarefa[quantidade]" />
             </li>
-            <li class="dia-semana"> <input type="checkbox" name="tarefa[segunda]" /> </li>
-            <li class="dia-semana"> <input type="checkbox" name="tarefa[terca]"   /> </li>
-            <li class="dia-semana"> <input type="checkbox" name="tarefa[quarta]"  /> </li>
-            <li class="dia-semana"> <input type="checkbox" name="tarefa[quinta]"  /> </li>
-            <li class="dia-semana"> <input type="checkbox" name="tarefa[sexta]"   /> </li>
-            <li class="dia-semana"> <input type="checkbox" name="tarefa[sabado]"  /> </li>
-            <li class="dia-semana"> <input type="checkbox" name="tarefa[domingo]" /> </li>
+            <li class="dia-semana"><input type="checkbox" name="tarefa[segunda]" /></li>
+            <li class="dia-semana"><input type="checkbox" name="tarefa[terca]"   /></li>
+            <li class="dia-semana"><input type="checkbox" name="tarefa[quarta]"  /></li>
+            <li class="dia-semana"><input type="checkbox" name="tarefa[quinta]"  /></li>
+            <li class="dia-semana"><input type="checkbox" name="tarefa[sexta]"   /></li>
+            <li class="dia-semana"><input type="checkbox" name="tarefa[sabado]"  /></li>
+            <li class="dia-semana"><input type="checkbox" name="tarefa[domingo]" /></li>
             <li class="funcao">
                 <input type="image" src="static/imgs/plus_32.png" />
             </li>
@@ -64,13 +65,13 @@
             <li class="quantidade">
                 <input type="text" class="quantidade" name="tarefa[quantidade]" value="<%= tarefa.quantidade %>" />
             </li>
-            <li class="dia-semana"> <input type="checkbox" name="tarefa[segunda]" <% if tarefa.segunda %>checked<% end %> /> </li>
-            <li class="dia-semana"> <input type="checkbox" name="tarefa[terca]"   <% if tarefa.terca %>checked<% end %> /> </li>
-            <li class="dia-semana"> <input type="checkbox" name="tarefa[quarta]"  <% if tarefa.quarta %>checked<% end %> /> </li>
-            <li class="dia-semana"> <input type="checkbox" name="tarefa[quinta]"  <% if tarefa.quinta %>checked<% end %> /> </li>
-            <li class="dia-semana"> <input type="checkbox" name="tarefa[sexta]"   <% if tarefa.sexta %>checked<% end %> /> </li>
-            <li class="dia-semana"> <input type="checkbox" name="tarefa[sabado]"  <% if tarefa.sabado %>checked<% end %> /> </li>
-            <li class="dia-semana"> <input type="checkbox" name="tarefa[domingo]" <% if tarefa.domingo %>checked<% end %> /> </li>
+            <li class="dia-semana"><input type="checkbox" name="tarefa[segunda]" <% if tarefa.segunda %>checked<% end %> /></li>
+            <li class="dia-semana"><input type="checkbox" name="tarefa[terca]"   <% if tarefa.terca   %>checked<% end %> /></li>
+            <li class="dia-semana"><input type="checkbox" name="tarefa[quarta]"  <% if tarefa.quarta  %>checked<% end %> /></li>
+            <li class="dia-semana"><input type="checkbox" name="tarefa[quinta]"  <% if tarefa.quinta  %>checked<% end %> /></li>
+            <li class="dia-semana"><input type="checkbox" name="tarefa[sexta]"   <% if tarefa.sexta   %>checked<% end %> /></li>
+            <li class="dia-semana"><input type="checkbox" name="tarefa[sabado]"  <% if tarefa.sabado  %>checked<% end %> /></li>
+            <li class="dia-semana"><input type="checkbox" name="tarefa[domingo]" <% if tarefa.domingo %>checked<% end %> /></li>
             <li class="funcao">
                 <input type="image" src="static/imgs/tick_32.png" name="atualizar" value="atualizar" />
                 <input type="image" src="static/imgs/trash_32.png" name="remover" value="remover"

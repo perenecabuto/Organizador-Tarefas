@@ -16,7 +16,7 @@ CouchFoo::Base.bulk_save_default = false
 CouchFoo::Base.logger = Logger.new(STDOUT)
 
 class OrganizadorDeTarefas
-    set :server, %w[webrick thin mongrel]
+    set :server, %w[thin mongrel webrick]
 
     use Rack::Session::Cookie,
         :key          => 'rack.session',
