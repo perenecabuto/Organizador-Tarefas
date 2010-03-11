@@ -57,6 +57,7 @@ class OrganizadorDeTarefas < Sinatra::Base
     end
 
     get "/logout" do
+        flash[:success] = "Até mais <b>#{get_usuario_autenticado.nome}</b>"
         self.logout
         redirect "/"
     end
