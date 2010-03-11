@@ -44,20 +44,22 @@ describe "Dado que estou acessando o organizador de tarefas" do
         );
 
         self.atualizar_quadro
+
+        @quadro.should have(2).tarefas
     end
 
     it "deve listar as tarefas de um usuario" do
-        @quadro.tarefas.class.should == Array
-        @quadro.tarefas.size.should == 2
+        @quadro.tarefas.should be_a Array
+        @quadro.should have(2).tarefas
     end
 
     it "deve atualizar tarefas no quadro" do
-        @quadro.tarefas[0].nome = 'test auteracao'
+        @quadro.tarefas[0].nome = 'test alteracao'
         @quadro.tarefas[0].save
 
         tarefa = Tarefa.find(@quadro.tarefas[0].id)
 
-        tarefa.nome.should == 'test auteracao'
+        tarefa.nome.should be_eql 'test alteracao'
     end
 
     it "deve remover tarefas do quadro" do
@@ -65,11 +67,11 @@ describe "Dado que estou acessando o organizador de tarefas" do
 
         @quadro.tarefas.delete(tarefa)
         self.atualizar_quadro
-        @quadro.tarefas.size == 1
+        @quadro.should have(1).tarefas
 
         @quadro.tarefas.delete_all
         self.atualizar_quadro
-        @quadro.tarefas.size == 0
+        @quadro.should have(0).tarefas
     end
 
     # TODO Release 2

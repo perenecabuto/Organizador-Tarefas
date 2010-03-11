@@ -19,8 +19,8 @@ class OrganizadorDeTarefas < Sinatra::Base
     end
 
     def autenticar(usuario)
-        flash[:success] = "Seja bem vindo " + usuario.nome
         session[:usuario] = usuario
+        flash[:success] = "Seja bem vindo " + usuario.nome
     end
 
     def get_quadro_atual
@@ -102,7 +102,7 @@ class OrganizadorDeTarefas < Sinatra::Base
         unless tarefa.save
             flash[:error] = tarefa.errors.full_messages
         else
-            flash[:sucess] = 'Salvo com sucesso'
+            flash[:success] = 'Salvo com successo'
         end
 
         redirect "/quadro_tarefas"
@@ -116,11 +116,11 @@ class OrganizadorDeTarefas < Sinatra::Base
             tarefa.update_attributes(params[:tarefa])
 
             if tarefa.save
-                flash[:sucess] = "Tarefa #{tarefa.nome} atualizada com sucesso"
+                flash[:success] = "Tarefa #{tarefa.nome} atualizada com successo"
             end
         elsif params[:remover]
             if self.get_quadro_atual.tarefas.delete(tarefa)
-                flash[:sucess] = "Tarefa #{tarefa.nome} removida com sucesso"
+                flash[:success] = "Tarefa #{tarefa.nome} removida com successo"
             end
         end
 
