@@ -1,17 +1,7 @@
-require 'rubygems'
-require 'rack/test'
-#
-require 'couch_foo'
+require File.dirname(__FILE__) + '/spec_helper'
 require 'model/usuario'
 require 'model/quadro'
 require 'model/tarefa'
-require 'logger'
-
-CouchFoo::Base.set_database(:host => "http://localhost:5984", :database => 'organizador_tarefas')
-CouchFoo::Base.bulk_save_default = false
-CouchFoo::Base.logger = Logger.new(STDOUT)
-
-#include Test::Unit::Assertions
 
 describe "Dado que estou acessando o organizador de tarefas" do
 
@@ -78,20 +68,22 @@ describe "Dado que estou acessando o organizador de tarefas" do
     it "deve navegar pelos quadros do usuario"
 
     # Usuario
-    it "deve verificar se o usuario esta autenticado"
-    it "deve mostrar tela de login"
-    it "deve cadastra"
+    it "deve cadastrar usuários"
 
     # Anotacoes
     it "deve exibir as anotacoes"
     it "deve criar anotacoes"
-    it "deve visualizar tarefa"
     it "deve editar as anotacoes"
     it "deve remover as anotacoes"
+
     # Anexos da Anotacao
     it "deve poder adicionar e remover anexos as tarefas"
+
     # Alerta
     it "deve receber alertas sobre data limite"
 
-
+    # Medicoes
+    it "deve exibir os status da tarefa de acordo com o dia da semana"
+    it "deve mostrar que esta na vespera do ultimo dia para completar uma tarefa"
+    it "deve mostrar que esta no ultimo dia para completar uma tarefa"
 end

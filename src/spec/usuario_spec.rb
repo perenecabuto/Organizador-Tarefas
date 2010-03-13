@@ -1,5 +1,4 @@
-require 'rubygems'
-require 'rack/test'
+require File.dirname(__FILE__) + '/spec_helper'
 require 'model/usuario'
 
 describe Usuario do

@@ -1,67 +1,7 @@
 require 'rubygems'
 require 'sinatra/base'
-require 'rack'
-require 'erb'
-
-require 'model/usuario'
-require 'model/quadro'
-require 'model/tarefa'
 
 class OrganizadorDeTarefas < Sinatra::Base
-
-    # Pega o usuario autenticado
-    def get_usuario_autenticado
-        return session[:usuario]
-    end
-
-    def logout
-        session[:usuario] = nil
-    end
-
-    def autenticar(usuario)
-        session[:usuario] = usuario
-        flash[:success] = "Seja bem vindo " + usuario.nome
-    end
-
-    def get_quadro_atual
-        quadro_atual = self.get_usuario_autenticado.quadro_atual
-        return quadro_atual
-    end
-
-    def usuario_autenticado?
-        return !session[:usuario].nil?
-    end
-
-    before do
-        unless request.path.match %q{^/(login|cadastro|static/.*)$} or usuario_autenticado?
-            redirect "/login"
-        end
-    end
-
-    get "/login" do
-        erb :login, :locals => {
-            :flash => flash
-        }
-    end
-
-    post "/login" do
-        usuario = Usuario.find_by_login_and_senha(params[:login], params[:senha])
-
-        unless usuario.nil?
-            self.autenticar( usuario )
-        else
-            flash[:error] = ["Login ou senha inválido"]
-        end
-
-        redirect "/"
-    end
-
-    get "/logout" do
-        flash[:success] = "Até mais <b>#{get_usuario_autenticado.nome}</b>"
-        self.logout
-        redirect "/"
-    end
-
     post "/cadastro" do
         unless params[:senha] == params[:repeticao_senha]
             flash[:error] = "Senhas nao conferem, digite novamente"
@@ -128,6 +68,11 @@ class OrganizadorDeTarefas < Sinatra::Base
         flash[:error] = tarefa.errors.full_messages unless tarefa.errors.empty?
 
         redirect "/quadro_tarefas"
+    end
+
+    def get_quadro_atual
+        quadro_atual = self.get_usuario_autenticado.quadro_atual
+        return quadro_atual
     end
 end
 
