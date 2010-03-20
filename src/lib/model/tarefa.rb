@@ -2,6 +2,8 @@ class Tarefa < CouchFoo::Base
     belongs_to :quadro
     property :quadro_id, String
 
+    has_many :anotacoes, :class_name => 'Anotacao'
+
     property :nome, String
     property :quantidade, Integer
 

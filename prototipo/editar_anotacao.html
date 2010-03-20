@@ -1,0 +1,93 @@
+<style type="text/css">
+    div.anexos, div.anotacao {
+        float: left;
+        border : 1px solid #eee;
+        padding: 10px;
+        margin-left: 10px;
+    }
+
+    .anexos form {
+        display: inline;
+    }
+
+    .anotacao {
+        border : 1px solid #eee;
+        padding: 10px;
+        width: 50%;
+    }
+
+    .anotacao textarea, .anotacao input[type="text"] {
+        width: 100%;
+    }
+
+    .anotacao textarea {
+        min-height: 300px;
+    }
+
+    .anotacao .acao {
+        text-align: right;
+        width: 100%;
+    }
+</style>
+
+<div class="anotacao">
+    <form method="post" action="anotacao/salvar/:id">
+        <p>
+            <label for="titulo-anotacao">Titulo</label><br />
+            <input id="titulo-anotacao" type="text" name="anotacao[titulo]" />
+        </p>
+
+        <p>
+            <textarea name="anotacao[texto]">
+dasfdsafadsfsadfsadfd
+dasfdsafadsfsadfsadfd
+dasfdsafadsfsadfsadfd
+dasfdsafadsfsadfsadfd
+dasfdsafadsfsadfsadfd
+            </textarea>
+        </p>
+
+        <p class="acao">
+            <a class="anotacao-botao" href="/quadro/:id/anotacoes">cancelar</a>
+            <input type="submit" value="salvar" />
+        </p>
+    </form>
+
+    <ul class="anexos">
+        <li><strong>Anexos</strong></li>
+        <ul>
+            <li>
+                <span>Anexo 1</span>
+                <form method="post" action="anotacao/anexo/remover/:id">
+                    <input type="hidden" name="anotacao[id]" value="" />
+                    <input type="submit" value="remover" />
+                </form>
+            </li>
+            <li>
+                <span>Anexo 2</span>
+                <form method="post" action="anotacao/anexo/remover/:id">
+                    <input type="hidden" name="anotacao[id]" value="" />
+                    <input type="submit" value="remover" />
+                </form>
+            </li>
+        </ul>
+    </ul>
+</div>
+
+<div class="anexos">
+    <form method="post" action="anotacao/anexo/adicionar">
+        <input type="hidden" name="anotacao[id]" value="">
+
+        <p>
+            <label for="titulo-anexo">Titulo</label><br />
+            <input id="titulo-anexo" type="file" name="titulo" />
+        </p>
+
+        <p>
+            <label for="arquivo-anexo">Arquivo</label><br />
+            <input id="arquivo-anexo" type="file" name="arquivo" />
+        </p>
+
+        <input class="anotacao-botao" type="submit" value="adicionar anexo" />
+    </form>
+</div>

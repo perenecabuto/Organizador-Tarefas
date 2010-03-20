@@ -1,0 +1,2 @@
+require 'config'
+run App

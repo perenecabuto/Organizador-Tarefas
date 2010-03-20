@@ -1,7 +1,8 @@
 body {
     font-family: sans, Verdana, monospace;
     font-size: 12px;
-    background-image: url(imgs/bg.jpg)
+    background-image: url(imgs/bg.jpg);
+    background-repeat: repeat; 
 }
 
 hr {

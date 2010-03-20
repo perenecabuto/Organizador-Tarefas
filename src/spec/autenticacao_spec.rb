@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + '/spec_helper'
-require 'autenticacao/extension'
 require 'control/organizador_tarefas'
+require 'autenticacao/extension'
 
 module Autenticacao::Extension::Helpers
     def flash
