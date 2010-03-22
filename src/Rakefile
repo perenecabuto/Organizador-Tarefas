@@ -6,14 +6,14 @@ desc "Run all examples"
 Spec::Rake::SpecTask.new('spec-report') do |t|
   t.rcov          = false
   t.pattern       = 'spec/**/*_spec.rb'
-  t.spec_opts     = [ "--format", "html:reports/rspec.html", "--diff" ]
+  t.spec_opts     = [ "-r", "spec/spec_helper.rb", "--format", "html:reports/rspec.html", "--diff" ]
   t.fail_on_error = false
 end
 
 Spec::Rake::SpecTask.new('spec') do |t|
   t.rcov          = false
   t.pattern       = 'spec/**/*_spec.rb'
-  t.spec_opts     = %w{ --colour --format nested --diff }
+  t.spec_opts     = %w{ -r spec/spec_helper.rb --colour --format nested --diff }
   t.fail_on_error = false
 end
 

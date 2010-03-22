@@ -1,1 +1,1 @@
---colour --format nested --diff
+--colour --format nested --diff --require spec/spec_helper.rb

@@ -1,5 +1,5 @@
-require File.dirname(__FILE__) + '/spec_helper'
-require 'control/organizador_tarefas'
+# encoding: utf-8
+
 require 'autenticacao/extension'
 
 module Autenticacao::Extension::Helpers

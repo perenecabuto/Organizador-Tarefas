@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 require 'rubygems'
 require 'sinatra/base'
 require 'model/usuario'
@@ -61,3 +63,4 @@ module Autenticacao
     end
   end
 end
+
